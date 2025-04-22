@@ -37,7 +37,7 @@ const setBgUrl = () => {
     case 0:
       bgUrl.value = `/background/bg${bgRandom}.jpg`;
       break;
-    case 1: {
+   /* case 1: {
       const isMobile = window.innerWidth < 768;
       bgUrl.value = `https://api.dujin.org/bing/${isMobile ? "m" : "1920"}.php`;
       break;
@@ -50,7 +50,7 @@ const setBgUrl = () => {
       break;
     case 4:
       bgUrl.value = set.backgroundCustom;
-      break; 
+      break; */
     default:
       bgUrl.value = `/background/bg${bgRandom}.jpg`;
       break;
@@ -77,7 +77,7 @@ const imgAnimationEnd = () => {
 // 图片显示失败
 const imgLoadError = () => {
   console.error("壁纸加载失败：", bgUrl.value);
-//  $message.error("壁纸加载失败，已临时切换回默认");
+  $message.error("壁纸加载失败，已临时切换回默认");
   bgUrl.value = `/background/bg${bgRandom}.jpg`;
 };
 
