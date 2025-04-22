@@ -49,12 +49,8 @@
       <span v-if="weatherData?.windLevel" class="wind-level"> {{ weatherData.windLevel }} 级 </span>
     </div> -->
     
-    <div v-if="set.showWeather" class="weather">
-      <span class="status">{{ weatherData?.condition ?? "" }}</span>
-      <span class="temperature">{{ weatherData?.temp ?? "" }} </span>
-      <span class="wind">{{ weatherData?.windDir ?? "" }}</span>
-      <span v-if="weatherData?.windLevel" class="wind-level"> {{ weatherData.windLevel }} 级 </span>
-    </div>     
+
+    
   </div>
 </template>
 
