@@ -79,7 +79,7 @@ const updateTimeData = () => {
 // 获取天气数据
 const getWeatherData = async () => {
   if (!weatherKey) {
-    return $message.warning("请配置天气 Key");
+//    return $message.warning("请配置天气 Key");
   }
   // 当前时间戳
   const currentTime = Date.now();
