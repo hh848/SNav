@@ -47,10 +47,10 @@ const setBgUrl = () => {
       break;
     case 3:
       bgUrl.value = "https://api.aixiaowai.cn/api/api.php";
-      break;
+      break; */
     case 4:
       bgUrl.value = set.backgroundCustom;
-      break; */
+      break; 
     default:
       bgUrl.value = `/background/bg${bgRandom}.jpg`;
       break;
