@@ -94,12 +94,12 @@ const getWeatherData = async () => {
   if (timeDifference >= 5 * 60 * 1000) {
     const adCodeResult = await getAdcode(weatherKey);
     if (adCodeResult.infocode !== "10000") {
-      return $message.error("地区查询失败");
+  //    return $message.error("地区查询失败");
     }
     // 获取天气数据
     const weatherResult = await getWeather(weatherKey, adCodeResult.adcode);
     if (weatherResult.infocode !== "10000") {
-      return $message.error("地区查询失败");
+  //    return $message.error("地区查询失败");
     }
     const data = weatherResult.lives[0];
     weatherData.value = {
